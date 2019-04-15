@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="main-content__column">
-        <img class="profile" src="assets/images/me.jpg" />
+        <img class="profile" src="/assets/images/me.jpg" />
       </div>
     </main>
 
