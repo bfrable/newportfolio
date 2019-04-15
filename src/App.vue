@@ -24,10 +24,10 @@ export default {
   name: 'app',
 
   mounted() {
-    let _this = this
-    setTimeout(function(){
-      _this.animate();
-    }, 250)
+    const that = this;
+    setTimeout(() => {
+      that.animate();
+    }, 250);
   },
 
   methods: {

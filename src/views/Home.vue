@@ -64,12 +64,11 @@ export default {
     },
     showProjects() {
       const projects = document.querySelectorAll('.project-card');
-      let top        = 0;
+      let top = 0;
 
       for (let i = 0; i < projects.length; i += 1) {
         if (!i == 0) {
           setTimeout(() => {
-            console.log(top);
             top += 47;
             projects[i].style.top = `${top}px`;
             projects[i].style.opacity = 1;
