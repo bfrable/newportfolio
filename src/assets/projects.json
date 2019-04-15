@@ -1,0 +1,46 @@
+[
+    {
+        "_id": "5c7ef47986a29a5c718754b9",
+        "index": 0,
+        "guid": "ac9c885e-ae8a-4224-913b-f5328960b941",
+        "isActive": false,
+        "picture": "http://placehold.it/32x32",
+        "title": "Project Title",
+        "description": "Project Description",
+        "link": "Project Link",
+        "color": "red"
+    },
+    {
+        "_id": "5c7ef479788dc0446845daf4",
+        "index": 1,
+        "guid": "ee20a483-5949-43ee-92b9-d552f0571b96",
+        "isActive": false,
+        "picture": "http://placehold.it/32x32",
+        "title": "Project Title",
+        "description": "Project Description",
+        "link": "Project Link",
+        "color": "green"        
+    },
+    {
+        "_id": "5c7ef479ef8f9ccd7d5f5caa",
+        "index": 2,
+        "guid": "2453fda8-1f37-4d2f-849b-d7f68fab7986",
+        "isActive": true,
+        "picture": "http://placehold.it/32x32",
+        "title": "Project Title",
+        "description": "Project Description",
+        "link": "Project Link",
+        "color": "yellow"
+    },
+    {
+        "_id": "5c7ef47918f653860bd3c94d",
+        "index": 3,
+        "guid": "23408bdc-8259-4530-bb88-feda1f393083",
+        "isActive": true,
+        "picture": "http://placehold.it/32x32",
+        "title": "Project Title",
+        "description": "Project Description",
+        "link": "Project Link",
+        "color": "blue"
+    }
+]
