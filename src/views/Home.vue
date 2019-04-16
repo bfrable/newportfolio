@@ -4,8 +4,8 @@
 
     <main class="main-content">
       <div class="main-content__column">
-        <h2 class="main-content__intro">Hello! I’m Brett Frable. I specialize in front-end development and UX/UI design. I'm
-         currently employed at <a href="">Zenmonics</a> as a UX Designer.</h2>
+        <h2 class="main-content__intro">Hello! I’m Brett Frable. I specialize in front-end development and UX/UI design. I'm 
+          currently employed at <a href="">Zenmonics</a> as a UX Designer.</h2>
 
         <div class="projects">
           <ProjectCard v-for="project in projects[0]" :key="project.guid"
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="main-content__column">
-        <img class="profile" src="/assets/images/me.jpg" />
+        <img class="profile" src="assets/images/me.jpg" />
       </div>
     </main>
 
@@ -145,7 +145,7 @@ a {
     max-width: 500px;
     transition: all .2s;
     width: 100%;
-
+    
     &.unfolded {
       box-shadow: -30px 0 0 -10px rgba(255, 166, 151,0.7);
     }
