@@ -1,19 +1,18 @@
 <template>
   <div class="home">
     <Header />
-
     <main class="main-content">
+
       <div class="main-content__column">
         <h2 class="main-content__intro">Hello! I’m Brett Frable. I specialize in front-end development and UX/UI design. I'm 
           currently employed at <a href="">Zenmonics</a> as a UX Designer.</h2>
-
         <div class="projects">
           <ProjectCard v-for="project in projects[0]" :key="project.guid"
           :bgColor="project.bgColor" :title="project.title"/>
         </div>
       </div>
       <div class="main-content__column">
-        <img class="profile" src="assets/images/me.jpg" />
+        <img class="profile" src="assets/images/me2.jpg" />
       </div>
     </main>
 
@@ -86,10 +85,10 @@ export default {
       const OriDomi = oridomi;
       const folded = new OriDomi(document.querySelectorAll('.main-content__column')[1], {
         shading: 'soft',
-        ripple: 0.5,
-        vPanels: 2,
+        vPanels: 3,
+        ripple: 0.2
       });
-      folded.setSpeed(450).stairs(25).accordion(-50).stairs(-70)
+      folded.wait(750).setSpeed(245).stairs(15).accordion(-20).stairs(-50)
         .curl(-50, () => {
           this.activePhoto();
           this.showProjects();
@@ -112,14 +111,15 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-left: -1em;
+  position: relative;
 
   &__column {
     box-sizing: border-box;
     flex: 0 calc(50% - 2em);
     margin: 1em;
-
-    &:first-child {
-      // padding: 0 50px 0 0;
+    
+    &:nth-of-type(2) {
+      animation: fadein 2s;
     }
   }
 
@@ -149,5 +149,12 @@ a {
     &.unfolded {
       box-shadow: -30px 0 0 -10px rgba(255, 166, 151,0.7);
     }
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    50%{ opacity: 0; }
+    75%{ opacity: .5; }
+    100%{ opacity: 1; }
 }
 </style>

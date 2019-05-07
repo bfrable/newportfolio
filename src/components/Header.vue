@@ -3,16 +3,24 @@
     <h1 class="header__title">B F</h1>
     <nav>
       <ul class="header__navigation">
-        <li class="header__navigation-item"><router-link to="/" class="header__navigation-link">Work</router-link></li>
-        <li class="header__navigation-item"><router-link to="/about" class="header__navigation-link">About Me</router-link></li>
+        <li class="header__navigation-item">
+          <NowPlaying />        
+        </li>
+        <li class="header__navigation-item"><router-link to="/" class="header__navigation-link"><i class="fas fa-paper-plane"></i></router-link></li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script>
+import NowPlaying from '@/components/NowPlaying.vue';
+
 export default {
   name: 'Header',
+
+  components: {
+    NowPlaying,
+  },
 };
 </script>
 
@@ -20,6 +28,7 @@ export default {
 <style scoped lang="scss">
 
 .header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   margin: 0 0 100px;
@@ -33,10 +42,11 @@ export default {
   &__navigation {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
 
   &__navigation-item {
-    display: inline-block;
     margin: 0 20px;
   }
 

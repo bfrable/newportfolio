@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <link rel="prefetch" href="assets/images/me.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <div class="container">
       <router-view/>
@@ -24,11 +23,14 @@ import anime from 'animejs';
 export default {
   name: 'app',
 
+  created () { // would work in 'ready', 'attached', etc.
+    window.addEventListener('load', () => {
+      this.setHeight();
+    })
+  },
+
   mounted() {
-    const that = this;
-    setTimeout(() => {
-      that.animate();
-    }, 250);
+    this.animate();
   },
 
   methods: {
@@ -44,12 +46,13 @@ export default {
           });
         }, anime.random(0, 3000));
       });
-
+    },
+    setHeight() {
       const height = Math.max(document.body.scrollHeight, document.body.offsetHeight,
-        document.documentElement.clientHeight,
-        document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+          document.documentElement.clientHeight,
+          document.documentElement.scrollHeight, document.documentElement.offsetHeight);
 
-      document.querySelector('svg.scene').setAttribute('style', `height: ${height};`);
+      document.querySelector('svg.scene').setAttribute('style', `height: ${height + 60};`);
     },
   },
 };

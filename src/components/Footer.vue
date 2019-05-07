@@ -39,7 +39,7 @@ export default {
 
   &__navigation-item {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px;
   }
 
   &__navigation-link {
