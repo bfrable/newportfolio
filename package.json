@@ -11,8 +11,12 @@
     "animejs": "^3.0.1",
     "axios": "^0.18.0",
     "oridomi": "^1.1.2",
+    "reset-css": "^4.0.1",
     "vue": "^2.6.6",
+    "vue-carousel": "^0.18.0",
+    "vue-glide-js": "^1.3.12",
     "vue-image-preloader": "^0.2.8",
+    "vue-owl-carousel": "^2.0.3",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
@@ -39,7 +43,15 @@
       "@vue/airbnb"
     ],
     "rules": {
-      "object-shorthand": 0
+      "object-shorthand": 0,
+      "max-len": 0,
+      "no-loop-func": 0,
+      "vue/no-use-v-if-with-v-for": [
+        "error",
+        {
+          "allowUsingIterationVar": true
+        }
+      ]
     },
     "parserOptions": {
       "parser": "babel-eslint"
