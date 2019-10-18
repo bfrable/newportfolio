@@ -1,0 +1,46 @@
+[
+    {
+        "_id": "5c7f0a6984573deeeea31cee",
+        "index": 0,
+        "guid": "7bce60eb-848a-4ce3-8b4c-79509902fd74",
+        "isActive": false,
+        "picture": "assets/images/engage-project.svg",
+        "title": "Drumkit",
+        "description": "Project Description",
+        "link": "Project Link",
+        "bgColor": "rgb(243, 117, 96)"
+    },
+    {
+        "_id": "5c7f0a69269f655de064ed6a",
+        "index": 2,
+        "guid": "d586e176-94d1-49d1-bdf2-fc4297c17da4",
+        "isActive": false,
+        "picture": "assets/images/state-farm-logo.svg",
+        "title": "Typeahead",
+        "description": "Project Description",
+        "link": "Project Link",
+        "bgColor": "rgb(243, 117, 96)"
+    },
+    {
+        "_id": "5c7f0a69bd7bd01c7d51e9c6",
+        "index": 3,
+        "guid": "c2fe6b0e-1f01-47fe-b689-ccd7658b9c9d",
+        "isActive": true,
+        "picture": "assets/images/gop-logo.png",
+        "title": "Canvas",
+        "description": "Project Description",
+        "link": "Project Link",
+        "bgColor": "rgb(243, 117, 96)"
+    },
+    {
+        "_id": "5c7f0a698b1d71ba5b814376",
+        "index": 1,
+        "guid": "9cbd50a7-ff18-4282-a618-89b29b23e192",
+        "isActive": false,
+        "picture": "assets/images/verizon-logo.png",
+        "title": "Tile",
+        "description": "Project Description",
+        "link": "Project Link",
+        "bgColor": "rgb(243, 117, 96)"
+    }
+]
