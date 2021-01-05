@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "animejs": "^3.0.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "firebase": "^6.5.0",
     "oridomi": "^1.1.2",
     "reset-css": "^4.0.1",
